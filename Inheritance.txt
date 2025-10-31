@@ -1,0 +1,32 @@
+Inheritance ການສືບທອດຄື : ການສ້າງຄລາສໃໝ່ຈາກ ຄລາສເກົ່າ ໂດຍຖືກເອີ້ນວ່າ ຄລາສລູກ Child Class ຈະຖືກສອບທອດຄຸນສົມບັດ Property ແລະ ພືດຕິກຳ Method ຈາກຄລາສແມ່ Parent Class
+
+	ໃຊ້ໄວ້ເຮັດຫຍັງ : ການໃຊ້ Inheritance OOP ໃຊ້ເພື່ອລົດການຂຽນໂປຮແກຮມຊ້ຳ (reuse) ແລະ ຈັດໝວດໝູ່ຄວາມສຳພັນຂອງຄລາສ
+	ເຊັ່ນ​: Employee --> Manager --> Technical ສືບທອດຈາກມັນໄດ້
+
+	ເປັນຫຍັງຕ້ອງໃຊ້ : 
+		         1. ລົດການຂຽນໂປຮແກຮມຊ້ຳ
+		         2. ຊ່ວຍຈັດການໂຄງສ້າງລະບົບໃຫ້ມີລຳດັບ ເຊັ່ນ : ພະນັກງານທຸກປະເພດສືດທອດຈາກ Employee
+		    3. ສາມາດຂະຫຍາຍລະບົບ ERP ໄດ້ງ່າຍ ເຊັ່ນ : ເພີ່ມ Contract Employee , Part time Employee ໂດຍບໍ່ຕ້ອງຂຽນໂຄ້ດໃໝ່ໝົດ
+		ແນວຄິດ : OOP Inheritance ຄືການ ສ້າງຄລາສລູກ ທີ່ ສືບທອດຄຸນສົມບັດຈາກຄລາສແມ່ ຊ່ວຍລົດການຂຽນໂຄ້ດຊ້ຳ ແລະ ເພີ່ມຄວາມເປັນລະບົບ
+	
+		ໂຄງສ້າງໃນ VB.Net ຂອງ OOP Inheritance :
+
+		Public Class ParentClass (ຊື່ຂອງຄລາສ)
+		    Public Property Property1 As String
+  	 	    Public Sub Method1()
+			Console.WriteLine("Method ຈາກ Parent")
+
+		    End Sub
+		End Class
+
+		Public Class ຊື່ຂອງຄລາສລູກທີ່ຈະສືບທອດ ຄລາສແມ່ Inheritance
+		   Inheritance ຊື່ຂອງຄລາສແມ່ທີ່ເຮົາຕ້ອງການສືບທອດມາ Parent Class
+
+		
+		''' ຂອບເຂດນີ້ເປັນການເພີ່ມ ຄຸນສົມບັດ Property ແລະ Method ພືດຕິກຳໃໝ່ສະເພາະໃຫ້ ຄລາສລູກ
+		        Public Property ຊື່ຕົວເເປທີ່ໃຊ້ໄວ້ເກັບ ຟິວຂໍ້ມູນພິເສດ ExtraField As String
+		        Public Sub ຊື່ຕົວແປໃຊ້ໄວ້ເກັບພືດຕິກຳ ExtraMethod ()
+			
+			Console.WriteLine("Method ຈາກ Class")
+		    End Sun
+		    End Class
