@@ -1,0 +1,27 @@
+OOP Polymorphism ພະຫຸຮູບ ຄື :​ຄວາມສາມາດຂອງວັດຖຸໃນການຕອບສະໜອງຕ່າງກັນ ແມ້ເຮົາຈະໃຊ້ ພືດຕິກຳດຽວກັນ Method
+ເຊັ່ນ : ຟັງຊັນຊື່ດຽວກັນ CalvculateBonus() ແຕ່ Manager ກັບ Staff ຄຳນວນບໍ່ຄຶກັນ
+
+	ໃຊ້ໄວ້ເຮັດຫຍັງ : ເຮົາຈະໃຊ້ເມື່ອຕ້ອງການຄລາສລູກ Child Class ສະແດງພືດຕິກຳສະເພາະຂອງຕົວເອງ ໂດຍທີ່ ຄລາສແມ່ Parent Class ຍັງອ້າງອິງມັນໄດ້ໃນແບບດຽວກັນ
+	ເປັນຫຍັງຕ້ອງໃຊ້ : 
+		     1. ເຮັດໃຫ້ໂຄ້ດ ເຮັດວຽກໄດ້ຫຍືດຫຍຸ່ນ ບໍ່ຈຳເປັນຕ້ອງຮູ້ຊະນິດວັດຖຸລ່ວງໜ້າ
+		          2. ເໝາະກັບລະບົບ ERP ທີ່ມີຫຼາຍປະເພດຂອງ Entity ເຊັ່ນ : ( ລູກຄ້າ, ພະນັກງານ , ສິນຄ້າ, ອື່ນໆເປັນຕົ້ນ ) 
+		          3. ຊ່ວຍ ລົດການຂຽນແບບ If . . . .... Else ຈຳນວນຫຼາຍໃນການຂຽນໂປຮແກຮມ
+
+		ແນວຄິດຂອງ OOP Polymorphism ຊື່ດຽວກັນ ແຕ່ວິທີການທຳງານຕ່າງກັນ Method ເຊັ່ນ : Method CalculateBonus() ຂອງແຕ່ລະຕຳແໜ່ງໃຫ້ຜົນຕ່າງກັນ
+
+		ໂຄງສ້າງ VB.NET ຂອງ OOP Polymorphism :
+		
+		Public Class ຊື່ຂອງຄລາສ BaseClass
+		      Public Overridable Sub Show()
+			     Console.WriteLine("ຈາກ BaseClass")
+
+		      End Sub
+		      End Class
+
+		Public Class ປະກາດຄລາສທີ່ໄດ້ຮັບມາ DerivedClass
+		        Inherits ຈູດອ້າງອີງທີ່ມາ BaseClass
+		    Public Overrides Sub Show()
+			Console.WriteLine("ຈາກ Derived Class")
+
+		    End Sub
+		End Class
