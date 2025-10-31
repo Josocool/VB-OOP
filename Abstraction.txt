@@ -1,0 +1,33 @@
+OOP Abstraction ນາມມະທຳ ຄື: ການເຊືອງລາຍລະອຽດການທຳງານ ແລະ ເປີດເຜີຍສະເພາະສິ່ງທີ່ສຳຄັນອອກມາເທົ່ານັ້ນ ທຳງານຄລ້າຍ Encapsulation ແຕ່ຈະເນັ້ນແນວຄິດລະດັບໂຄງສ້າງຫຼາຍກວ່າ.
+
+	ໃຊ້ໄວ້ເຮັດຫຍັງ : 
+		       1. ໃຊ້ເພື່ອກຳນົດ ແບບແຜນ ຫຼື ໂຄງສ້າງຂອງຄລາສ
+		     2. ໂດຍບໍ່ຕ້ອງບອກວ່າມັນເຮັດວຽກແນວໃດ ແລະ ມັກໃຊ້ຜ່ານ Abstract Class ຫຼື Interface
+
+	ເປັນຫຍັງຕ້ອງໃຊ້ : 
+ 					    	1. ເພື່ອກຳນົດມາດຕະຖານຮ່ວມ ໃຫ້ທຸກໂມດູນໃນລະບົບ ເຊ່ັ່ນ :​ERP (Dept HR, Dept Inventory, Dept Finance ແລະອື່ນໆ)
+		            2. ເຮັດໃຫ້ທີມຂຽນໂປຮແກຮມຄົນລະສ່ວນ ຍັງສາມາດທຳງານເຂົ້າກັນໄດ້
+		            3. ປັບປ່ຽນ ຫຼື ເພີ່ມໂມດູນໄດ້ງ່າຍ ໂດຍບໍ່ກະທົບໂຄ້ດສ່ວນອື່ນ
+
+	 	ແນວຄິດ OOP Abstraction ແມ່ນການ ເຊື່ອງລາຍລະອຽດ ຂອງຄລາສ ແລະ ເປິດເຜິຍສະເພາະສິ່ງທີ່ສຳຄັນ ໃຊ້ເພື່ອ ກຳນົດມາດຕະຖານຂອງຄລາສ ເຊັ່ນ ທຸກໂມດູນຕ້ອງມີ Load / Save
+
+		
+		''' ຄລາສນາມມະທຳ Abstraction Class 
+		Public MustInherit Class AbstactClass
+			Public MustOverride Sub LoadData()
+			Public Mustoverride Sub SaveData()
+		End Class
+
+		''' ຄລາສຈິງທີ່ສືບທອດມາ
+		Public Class ຊື່ຂອງຄລາສໃໝ່ ConcreateClass
+		      Inherits AbstractClass
+		      Public Overrides Sub LoadData()
+			Console.WriteLine("ໂຫຼດຂໍ້ມູນຈິງ")
+			
+		              End Sub
+		
+		      Public Overrides Sub SaveData()
+			Console.WriteLine("ບັນທືກຂໍ້ມູນຈິງ")
+
+		              End Sub
+		End Class
